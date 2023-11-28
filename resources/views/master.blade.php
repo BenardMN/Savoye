@@ -39,26 +39,42 @@
             <div class="col-lg-4 col-md-6 d-flex flex-column align-items-center justify-content-center">
 
               <div class="d-flex justify-content-center py-4">
-                <a href="/" class="logo d-flex align-items-center w-auto">
-                  <img src="/img/favicon.png" alt="">
-                  <span class="d-none d-lg-block">Arsha</span>
+                <a href="/">
+                  <img src="/img/gras-savoye-logo.jpg" alt="">
+                  <!--span class="d-none d-lg-block">Arsha</span-->
                 </a>
               </div><!-- End Logo -->
 
               <div class="card mb-3">
                 <div class="card-body">
                   <div class="pt-4 pb-2">
-                    <h5 class="card-title text-center pb-0 fs-4">Create an Account</h5>
-                    <!--p class="text-center small">Enter your personal details to create account</p-->
+                    <h5 class="card-title text-center pb-0 fs-4">Welcome</h5>
+                    <p class="text-center small">Welcome back! Please enter your details</p>
                   </div>
+                  @if(isset(Auth::user()->email))
+                    <script>window.location="/main/successlogin";</script>
+                  @endif
+                  
+                  @if ($message = Session::get('error'))
+                    <div class="alert alert-danger alert-block">
+                      <button type="button" class="close" data-dismiss="alert">×</button>
+                      <strong>{{ $message }}</strong>
+                    </div>
+                  @endif
+
+                  @if (count($errors) > 0)
+                    <div class="alert alert-danger">
+                      <ul>
+                        @foreach($errors->all() as $error)
+                          <li>{{ $error }}</li>
+                        @endforeach
+                      </ul>
+                    </div>
+                  @endif
+
                   @yield('content')
+                  
                 </div>
-              </div>
-              <div class="copyright">
-                &copy; Copyright <strong><span>Arsha</span></strong>. All Rights Reserved
-              </div>
-              <div class="credits">
-                Designed by <a href="https://ibs.co.ke/">Ibs</a>
               </div>
             </div>
           </div>

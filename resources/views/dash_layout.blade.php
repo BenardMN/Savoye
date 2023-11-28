@@ -32,6 +32,8 @@
 </head>
 
 <body>
+
+@if(isset(Auth::user()->email))
     <!-- ======= Header ======= -->
     <header id="header" class="header fixed-top d-flex align-items-center">
         <div class="d-flex align-items-center justify-content-between">
@@ -246,9 +248,9 @@
             </li>
 
             <li>
-              <a class="dropdown-item d-flex align-items-center" href="/">
+              <a class="dropdown-item d-flex align-items-center" href="{{ url('/main/logout') }}">
                 <i class="bi bi-box-arrow-right"></i>
-                <span>Sign Out</span>
+                <span>Logout</span>
               </a>
             </li>
 
@@ -326,9 +328,9 @@
       </li><!-- End Contact Page Nav -->
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="/">
+        <a class="nav-link collapsed" href="{{ url('/main/logout') }}">
           <i class="bi bi-box-arrow-in-right"></i>
-          <span>Sign Out</span>
+          <span>Logout</span>
         </a>
       </li><!-- End Login Page Nav -->
     </ul>
@@ -361,6 +363,10 @@
 
   <!-- Template Main JS File -->
   <script src="/js/login.js"></script>
+
+  @else
+    <script>window.location = "/main";</script>
+  @endif
 
 </body>
 

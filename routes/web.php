@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\loginController;
 
 /*
 |--------------------------------------------------------------------------
@@ -36,3 +37,10 @@ Route::get('/register', function () {
 Route::get('/profile', function () {
     return view('/profile');
 });
+
+Route::get('/uploadfile', 'UploadfileController@index');
+Route::post('/uploadfile', 'UploadfileController@upload');
+Route::get('main', [loginController::class,'index']);
+Route::post('main/checklogin', [loginController::class,'checklogin']);
+Route::get('main/successlogin', [loginController::class,'successlogin']);
+Route::get('main/logout', [loginController::class,'logout']);
