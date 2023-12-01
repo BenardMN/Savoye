@@ -37,7 +37,7 @@
     <div class="container d-flex align-items-center">
       <!--h1 class="logo me-auto"><a href="/">Arsha</a></h1-->
       <!-- Uncomment below if you prefer to use an image logo -->
-      <a href="index.html" class="logo me-auto"><img src="/img/gras-savoye-logo.jpg" alt="" class="img-fluid"></a>
+      <a href="index.html" class="logo me-auto"><img src="/img/favicon.png" alt="" class="img-fluid"></a>
 
       <nav id="navbar" class="navbar">
         <ul>
@@ -62,13 +62,8 @@
     <!--img src="/img/b4.jpg" alt=""-->
       <div class="row">
         <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
-          <h1>A central source of data for
-            insurance companies</h1>
-          <p>Gras Savoye is an insurance lead brokerage firm in France
-          since 1992, that partners with companies of all sizes to
-          manage risk and protect assets—insuring property and
-          casualty, cargo and transport, life and health, automotive,
-          construction, civil liability, and more.</p>
+          <h1>Praesent volutpat nulla eu risus volutpat.</h1>
+          <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar ante.</h2>
           <div class="d-flex justify-content-center justify-content-lg-start">
             <a href="#" class="btn-get-started scrollto">Learn More</a>
           </div>

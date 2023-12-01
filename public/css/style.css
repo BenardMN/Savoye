@@ -1696,7 +1696,7 @@ section {
 
 #footer .footer-top {
   padding: 60px 0 30px 0;
-  background: #1524a7e1;
+  background: #fff;
 }
 
 #footer .footer-top .footer-contact {
@@ -1710,7 +1710,7 @@ section {
   line-height: 1;
   text-transform: uppercase;
   font-weight: 600;
-  color: #f1f3f7;
+  color: #37517e;
 }
 
 #footer .footer-top .footer-contact p {
@@ -1718,13 +1718,13 @@ section {
   line-height: 24px;
   margin-bottom: 0;
   font-family: "Jost", sans-serif;
-  color: #f5f0f0;
+  color: #5e5e5e;
 }
 
 #footer .footer-top h4 {
   font-size: 16px;
   font-weight: bold;
-  color: #f3f5f8;
+  color: #37517e;
   position: relative;
   padding-bottom: 12px;
 }
@@ -1741,7 +1741,7 @@ section {
 
 #footer .footer-top .footer-links ul i {
   padding-right: 2px;
-  color: #f4f6f7;
+  color: #47b2e4;
   font-size: 18px;
   line-height: 1;
 }
@@ -1765,13 +1765,13 @@ section {
 
 #footer .footer-top .footer-links ul a:hover {
   text-decoration: none;
-  color: #f5f7f8;
+  color: #47b2e4;
 }
 
 #footer .footer-top .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #2a98ca;
+  background: #47b2e4;
   color: #fff;
   line-height: 1;
   padding: 8px 0;
@@ -1784,7 +1784,7 @@ section {
 }
 
 #footer .footer-top .social-links a:hover {
-  background: #127aaa;
+  background: #209dd8;
   color: #fff;
   text-decoration: none;
 }
